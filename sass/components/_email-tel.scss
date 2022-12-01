@@ -1,0 +1,40 @@
+.list {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.list-item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1428;
+    letter-spacing: 0.02em;
+}
+
+.list-mail-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.list-tel-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.list-contact {
+    transition: color var(--transition-hover-focus);
+    align-items: center;
+    display: flex;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.list-contact:hover,
+.list-contact:focus {
+    color: var(--color-hover-focus);
+}
