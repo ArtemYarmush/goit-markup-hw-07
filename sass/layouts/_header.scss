@@ -133,8 +133,7 @@
 
 .list-contact {
     transition: color var(--transition-hover-focus);
-    align-items: center;
-    display: flex;
+    
     color: var(--color-text);
     text-decoration: none;
 
@@ -142,4 +141,8 @@
     &:focus {
         color: var(--color-hover-focus);
     }
+}
+.list-contact__container {
+align-items: center;
+    display: flex;
 }
