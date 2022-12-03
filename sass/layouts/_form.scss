@@ -28,21 +28,18 @@
     letter-spacing: 0.01em;
     color: var(--color-title);
     transition: border-color var(--transition-hover-focus);
+    &:focus {
+            border-color: var(--color-hover-focus);
+        }
 }
-
-.modal-input:focus {
-    border-color: var(--color-hover-focus);
-}
-
 .modal-icon {
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.modal-input:focus+.modal-icon {
-    fill: var(--color-hover-focus);
+    .modal-input:focus+& {
+            fill: var(--color-hover-focus);
+        }
 }
 
 .modal-textarea {
@@ -59,12 +56,10 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-hover-focus);
+    &:focus {
+            border-color: var(--color-hover-focus);
+        }
 }
-
-.modal-textarea:focus {
-    border-color: var(--color-hover-focus);
-}
-
 .policy {
     margin-top: 10px;
 }
@@ -92,18 +87,15 @@
     align-items: center;
     justify-content: center;
     fill: transparent;
+    .modal-policy:checked+& {
+            background-color: var(--color-hover-focus);
+            fill: var(--color-footer-logo);
+            border-color: transparent;
+        }
+                & {
+                    transition: fill var(--transition-hover-focus);
+                }
 }
-
-.modal-policy:checked+.check-text span {
-    background-color: var(--color-hover-focus);
-    fill: var(--color-footer-logo);
-    border-color: transparent;
-}
-
-.check-text span {
-    transition: fill var(--transition-hover-focus);
-}
-
 .policy-contract {
     margin-left: 5px;
     font-style: normal;
@@ -116,7 +108,6 @@
     display: inline-block;
     transition: color var(--transition-hover-focus);
 }
-
 .modal-button-send {
     cursor: pointer;
     min-width: 200px;

@@ -32,9 +32,8 @@
     display: flex;
     color: var(--color-text);
     text-decoration: none;
-}
-
-.list-contact:hover,
-.list-contact:focus {
-    color: var(--color-hover-focus);
+    &:hover,
+        &:focus {
+            color: var(--color-hover-focus);
+        }
 }

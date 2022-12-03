@@ -18,6 +18,11 @@
     position: relative;
     color: var(--color-title);
     text-decoration: none;
+    &:focus,
+        &:hover,
+        &.current {
+            color: var(--color-hover-focus);
+        }
 }
 
 .nav-studio.current::after {
@@ -38,6 +43,11 @@
     position: relative;
     color: var(--color-title);
     text-decoration: none;
+    &:focus,
+        &:hover,
+        &.current {
+            color: var(--color-hover-focus);
+        }
 }
 
 .nav-portfolio.current::after {
@@ -56,15 +66,11 @@
     transition: color var(--transition-hover-focus);
     color: var(--color-title);
     text-decoration: none;
+    &:focus,
+        &:hover {
+            color: var(--color-hover-focus);
+        }
 }
 
-.nav-studio:focus,
-.nav-studio:hover,
-.nav-studio.current,
-.nav-portfolio:focus,
-.nav-portfolio:hover,
-.nav-portfolio.current,
-.nav-contacts:focus,
-.nav-contacts:hover {
-    color: var(--color-hover-focus);
-}
+
+

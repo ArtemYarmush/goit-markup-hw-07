@@ -50,13 +50,11 @@
 
 .modal-button-icon {
     transition: fill var(--transition-hover-focus);
+    .modal-button:hover &,
+        .modal-button:focus & {
+            fill: var(--color-hover-focus);
+        }
 }
-
-.modal-button:hover .modal-button-icon,
-.modal-button:focus .modal-button-icon {
-    fill: var(--color-hover-focus);
-}
-
 .modal-title {
     margin-bottom: 12px;
     font-weight: 700;
